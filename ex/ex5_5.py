@@ -1,6 +1,6 @@
 # 割り勘データを入力
 def int_input(text):
-    return int(input("支払い総額を入力してください >>"))
+    return int(input(f"{text}を入力してください >>"))
 
 # 割り勘を計算
 # 幹事の支払額の計算
@@ -17,3 +17,9 @@ def show_payment(pay,payorg,people=2,):
     print("*** 支払額 ***")
     print(f"1人あたり{pay}円({people}人)、幹事は{payorg}円です")
 
+
+amount = int_input("支払い総額")
+people = int_input("参加人数")
+
+pay,payorg = calc_payment(amount,people)
+show_payment(pay,payorg,people)
