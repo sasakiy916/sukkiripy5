@@ -5,11 +5,15 @@ def is_leapyear(year):
         return True
     return False
 
+# 実行文
 while True:
-    year = input("西暦を入力 >> ")
+    year = input("西暦を入力(n 入力で終了) >> ")
+    
+    # 終了処理
     if year == "n":
         break
 
+    # うるう年判定
     if is_leapyear(int(year)):
         print(f"西暦{year}年は、うるう年です")
     else:
