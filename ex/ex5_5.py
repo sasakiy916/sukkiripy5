@@ -20,6 +20,5 @@ def show_payment(pay,payorg,people=2,):
 
 amount = int_input("支払い総額")
 people = int_input("参加人数")
-
 pay,payorg = calc_payment(amount,people)
 show_payment(pay,payorg,people)
