@@ -1,7 +1,5 @@
-scores = [1,1,2]
+print(type(7/4))
+print(type(7//4))
 
-def add_score(scores):
-    scores[0] += 5
-
-add_score(scores)
-print(scores)
+print(type(7.0/4))
+print(type(7.0//4))

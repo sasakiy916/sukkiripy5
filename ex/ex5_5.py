@@ -5,12 +5,12 @@ def int_input(text):
 # 割り勘を計算
 # 幹事の支払額の計算
 def calc_payment(amount,people=2):
-    dnum = amount /people
+    dnum = amount / people
     pay = dnum // 100 * 100
     if dnum > pay:
-        pay = int(pay + 100)
+        pay = pay + 100
     payorg = amount - pay * (people - 1)
-    return pay,payorg
+    return int(pay),int(payorg)
 
 # 結果の表示
 def show_payment(pay,payorg,people=2,):

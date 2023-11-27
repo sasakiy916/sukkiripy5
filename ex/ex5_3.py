@@ -1,3 +1,4 @@
+
 def take_bus():
     print("バスに乗ります")
 
